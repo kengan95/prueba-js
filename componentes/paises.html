@@ -1,0 +1,32 @@
+<section class="padded">
+    <div class="container">
+        <h2>Paises</h2>
+            <div class="row">
+                <div class="col-md-8">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Cod</th>
+                            <th>Nombre</th>
+                            <th>Capital</th>
+                            <th>Subregion</th>
+                            <th>Poblacion</th>
+                            <th>Area</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-paises">
+                        
+                    </tbody>
+                </table>  
+                 </div>  <!--col--> 
+                 <div class="col-md-3">
+                     <h3 id="pais-nombre"></h3>
+                     <h4 id="pais-capital"></h4>
+                     <img src="" alt="" class="img-fluid" id="pais-bandera">
+                 </div>              
+            </div><!--row-->
+    </div><!--container-->
+</section>
+<script>
+    $.getScript("componentes/paises.js");
+</script>

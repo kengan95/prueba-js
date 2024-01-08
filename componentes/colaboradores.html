@@ -1,0 +1,31 @@
+<h1 class="fs-1">MELANIE</h1>
+<section class="padded">
+    <div class="container">
+        <h2>Colaboradores</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Cod</th>
+                            <th>Nombre</th>
+                            <th>Cargo</th>
+                            <th>Ciudad</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-colaboradores">
+                        
+                    </tbody>
+                </table>                    
+            </div>
+            <div class="col-md-4">
+                <h3 id="colaboradores-nombres"></h3>                            
+                <h4 id="colaboradores-cargo"></h4>
+                <img src="" alt="" class="img-fluid" id="colaboradores-foto">
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $.getScript("componentes/colaboradores.js");
+</script>

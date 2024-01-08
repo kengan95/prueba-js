@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
+body{
+    font-family: 'Poppins', sans-serif;
+}
+figure{
+    margin-bottom: 0;/* Anula el margen ingerior por defecto que tiene el figure debido a bootstrap */
+}
+h1{
+    font-size: 48px;/*tamaño de letra*/
+    font-weight: 900; 
+    letter-spacing: -2px;/*espaciado entre letra y letra*/
+    margin-bottom: 0;/* para quitar su espacion entre el contenido y mensaje*/
+}
+h2{
+    font-size: 48px;/*tamaño de letra*/
+    font-weight: 200; 
+    letter-spacing: -2px;/*espaciado entre letra y letra*/
+    text-transform: lowercase; /* Minúsculas */
+}
+h3{
+    font-size: 24px;/*tamaño de letra*/
+    font-weight: 700; 
+    text-transform: uppercase; /* Mayúsculas */
+}
+#main-header{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#main-content{
+    min-height: 600px;/*alto minimo*/
+}
+#mensaje{
+    background-color: #eeeeee;
+}
+#noticias{
+    background-color: #dddddd;
+}
+#videos{
+    background-color: #000000;
+    color: #ffffff;
+}
+#videos h2{
+    display: inline-block;
+}
+#eventos{
+    background-color: #cccccc;
+}
+#empresa{
+    background-color: #000000;
+    color: #ffffff;
+}
+#main-footer{
+    background-color: #555555;
+    color: #eeeeee;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+#galeria figure{
+    position: relative;
+} 
+#galeria figure figcaption{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    /*para que el cuadro de color negro este sobre las images*/
+    top:0;/*con respecto al su contenedor */
+
+    /*para que no se vea al inicio*/
+    display: none;
+    color: #ffffff;
+}
+#galeria figure figcaption div{
+    height: 100%;
+    /*para centrarlo*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*para acomodar la lupa en la parte superior del nombre*/
+    flex-direction: column;
+}
+/*para que aparesca la manito*/
+#galeria figure figcaption div i{
+    cursor: pointer;
+}
+
+.padded{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+#fondo-oscuro{
+    position: fixed;/*para que quede fijo con respecto a la ventana del navegador*/
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    top:0;/*para que este pegado hacia arriba*/
+    z-index: 3000;/*para que tape la barra de menu por que su z-index es 2999*/
+
+    /*para que se centre la imagen que esta sobre el fondo oscuro*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*para cambiar el color a .list-group-item.active*/
+.list-group-item.active {
+    color: #010101;
+    background-color: #ffee58;
+    border-color: #ffee58;
+}
+
+/* Media queries */
+@media(max-width:767px){
+    #empresa{
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+}
